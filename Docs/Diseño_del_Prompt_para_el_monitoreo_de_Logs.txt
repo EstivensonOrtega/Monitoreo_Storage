@@ -1,0 +1,34 @@
+Dise�o del Prompt para el monitoreo de Logs 
+
+Estoy necesitando implementar un proyecto ASP.NET Core Web Api con .NET 10 para el monitoreo de unas Tables de Azure Storage para dos aplicaciones AppSalud y LinaChatbot
+
+El objetivo del proyecto es leer unos Logs que est�n en unas tablas, para detectar:
+*  errores de servicios externos (outbound) 
+*  errores internos recurrentes de la aplicaci�n 
+* tiempos de respuesta elevados seg�n el tipo de servicio  
+ 
+Criterio de aceptaci�n 1: Identificaci�n errores y tiempos de respuestas elevados
+Dado que se requiere analizar los Logs en las diferentes tablas del Azure Storage,
+ Cuando se obtengan los registros de las tablas,
+ Entonces se debe implementar un LLM que analice los registros obtenidos para identificar erros de servicio externos, internos, y tiempos de respuestas elevados.
+ 
+Criterio de aceptaci�n 2: Identificaci�n errores y tiempos de respuestas elevados
+ Dado que se requiere enviar una notificaci�n 
+Cuando cuando el criterio de aceptaci�n 1 se cumpla 
+Entonces se debe enviar una notificaci�n ya sea por (Telegram, correo, etc.) 
+  
+ Recursos 
+
+ Para AppSalud  este son los datos que se tienen:
+Cuneta de almacenamiento: DefaultEndpointsProtocol=https;AccountName=appsaluddevstorage;AccountKey=tgw633R2bnHIWaJnuhgkEUaLk0tUU6bv0MSjkpIvBQYpz2ZcYSMQWN/ngwQDjMLzTQynp5VgDyOAg==;EndpointSuffix=core.windows.net;
+Listado de tablas a analizar: AppLog, Log, LogCsAuthenticate
+ 
+ Para LinaChatbot este son los datos que se tienen:
+Cuneta de almacenamiento: DefaultEndpointsProtocol=https;AccountName=Linadevstorage;AccountKey=tgw633R2bnHIWaJnuhgkEUaLk0tUU6bv0MSjkpIvXRTBQYpz2ZcYSMQWN/ngwQDjMLzTQynp5VgDyOAg==;EndpointSuffix=core.windows.net;
+Listado de tablas a analizar: AppLog, Log, LogCsAuthenticate
+En cuanto al LLM esto es lo que se tiene: LinaLog, LogLinaMobile
+
+
+ 
+
+

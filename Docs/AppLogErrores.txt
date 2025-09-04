@@ -1,0 +1,917 @@
+PartitionKey;RowKey;Exception;Exception@type;LogDate;LogDate@type;Project;Project@type;Type;Type@type;DocumentNumber;DocumentNumber@type;DocumentType;DocumentType@type;NameMethod;NameMethod@type;Period;Period@type;Input;Input@type;Output;Output@type;TimeService;TimeService@type
+20250305;638768104654566620;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:45.45667Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768104655756040;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:45.575612Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768104666311260;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:46.63114Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768104670400350;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:47.040043Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768104674764870;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:47.476501Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768104798593490;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:27:59.859371Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768105054176900;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:28:25.41775Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768105289366550;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:28:48.936708Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768105301333210;[GetAppointmentInfoPdf] There is an error in XML document (1, 40).;String;2025-03-05T17:28:50.133344Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768106841504820;[GetAppointmentInfoPdf] There is an error in XML document (1, 94209).;String;2025-03-05T17:31:24.150533Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768109440797415;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T17:35:44.0797447Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768112349738947;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T17:40:34.9738983Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768126397634504;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:03:59.7634529Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768127465367171;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:05:46.5367992Z;DateTime;Authentication;String;STO_Error;String;1012331441;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768127586309910;[GetAppointmentInfoPdf] The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.;String;2025-03-05T18:05:58.631068Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768128235069400;[GetAppointmentInfoPdf] There is an error in XML document (0, 0).;String;2025-03-05T18:07:03.506948Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768130649017357;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:11:04.9017396Z;DateTime;Authentication;String;STO_Error;String;1012331441;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768130764647365;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:11:16.4647386Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768131136260933;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsMedicalAppointments.Backend.ExternalServices.Referentials.ClientWebBase`1.Get(IDictionary`2 parameters) in D:\a\1\s\Consorcio.CsMedicalAppointments.Backend\Consorcio.CsMedicalAppointments.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 308";String;2025-03-05T18:11:53.6261517Z;DateTime;MedicalAppointments;String;REST_ErrorExternalService;String;1020790170;String;1;String;https://apispru.compensarsalud.com/wconsultassas-aut-rst/v1.0//ConsultarCupsPrimeraControl;String;;;"""sApl=SWPR135&Identificacion=1020790170&TipoIdentificacion=1&CodEps=8&CodigoCups=890206&Opcion=1&Formato=JSON""";String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0392045;String
+20250305;638768131759129960;[GetAppointmentInfoPdf] There is an error in XML document (0, 0).;String;2025-03-05T18:12:55.913003Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768132233224574;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:13:43.3224607Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.5227609;String
+20250305;638768132235798505;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:13:43.5798535Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.2386546;String
+20250305;638768132316944160;"System.Net.Http.HttpRequestException: nodename nor servname provided, or not known (apispru.compensarsalud.com:443)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consorcio.CsMedicalAppointments.Backend.ExternalServices.Referentials.ClientWebBase`1.PostXmlAsync(String xml) in /Users/carlos.bolanos/Documents/projects/CloudServiceMedicalAppointments/Consorcio.CsMedicalAppointments.Backend/Consorcio.CsMedicalAppointments.Backend.ExternalServices/Referentials/ClientWebBase.cs:line 401";String;2025-03-05T18:13:51.694443Z;DateTime;MedicalAppointments;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wscersalud;String;;;"""""";String;;String;;String
+20250305;638768132333603814;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:13:53.3603842Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0458898;String
+20250305;638768132334147936;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:13:53.4147955Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0458023;String
+20250305;638768132527827467;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:14:12.7827484Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1770973;String
+20250305;638768132529334552;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:14:12.9334575Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0700698;String
+20250305;638768132997196955;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsMedicalAppointments.Backend.ExternalServices.Referentials.ClientWebBase`1.Get(IDictionary`2 parameters) in D:\a\1\s\Consorcio.CsMedicalAppointments.Backend\Consorcio.CsMedicalAppointments.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 308";String;2025-03-05T18:14:59.7197299Z;DateTime;MedicalAppointments;String;REST_ErrorExternalService;String;1012331441;String;1;String;https://apispru.compensarsalud.com/wconsultassas-aut-rst/v1.0//Incumplimientos;String;;;"""sApl=SWPR135&TipoIdentificacion=1&Identificacion=1012331441&Opcion=1&Formato=JSON""";String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0000972;String
+20250305;638768133149429274;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:15:14.942948Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.4304420;String
+20250305;638768133150909824;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:15:15.0909844Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1369243;String
+20250305;638768133162041640;"System.Net.Http.HttpRequestException: nodename nor servname provided, or not known (apispru.compensarsalud.com:443)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consorcio.CsMedicalAppointments.Backend.ExternalServices.Referentials.ClientWebBase`1.PostXmlAsync(String xml) in /Users/carlos.bolanos/Documents/projects/CloudServiceMedicalAppointments/Consorcio.CsMedicalAppointments.Backend/Consorcio.CsMedicalAppointments.Backend.ExternalServices/Referentials/ClientWebBase.cs:line 401";String;2025-03-05T18:15:16.204185Z;DateTime;MedicalAppointments;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wscersalud;String;;;"""<Envelope xmlns=\""http://schemas.xmlsoap.org/soap/envelope/\"">\n  <Body>\n    <ConsultarSoporteSolicitudCitaMedicaBase64 xmlns=\""http://SWSCERSALUD/\"">\n      <sXml>&lt;ConsultarSoporteSolicitudCitaMedica&gt;\n  &lt;dtSolicitudMedica&gt;\n    &lt;numeroAutorizacion&gt;250634001588048&lt;/numeroAutorizacion&gt;\n    &lt;nombreMedico&gt;ASTRID CAROLINA ROMERO PIÑERES&lt;/nombreMedico&gt;\n    &lt;especialidad&gt;Consulta 1 vez dermatologia&lt;/especialidad&gt;\n    &lt;fechaYHora&gt;Martes, 11 de Mar de 2025 11:20 AM&lt;/fechaYHora&gt;\n    &lt;lugar&gt;AC 26  66 A 48 TO A P 6 CS 604&lt;/lugar&gt;\n    &lt;cuotaModeradora&gt;0&lt;/cuotaModeradora&gt;\n    &lt;TipoAutorizacion /&gt;\n    &lt;TipoIdentificacionPaciente&gt;CC&lt;/TipoIdentificacionPaciente&gt;\n    &lt;IdentificacionPaciente&gt;52901193&lt;/IdentificacionPaciente&gt;\n    &lt;NombrePaciente&gt;ADRIANA MIREYA CAMARGO RAIRAN&lt;/NombrePaciente&gt;\n  &lt;/dtSolicitudMedica&gt;\n&lt;/ConsultarSoporteSolicitudCitaMedica&gt;</sXml>\n    </ConsultarSoporteSolicitudCitaMedicaBase64>\n  </Body>\n</Envelope>""";String;;String;;String
+20250305;638768133469039031;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:15:46.9039055Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0503614;String
+20250305;638768133469536505;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:15:46.9536524Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0403399;String
+20250305;638768133606392968;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:00.6392985Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1513622;String
+20250305;638768133608073983;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:00.8074004Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1228885;String
+20250305;638768133743840468;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:14.3840498Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0395610;String
+20250305;638768133744356420;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:14.435644Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0390834;String
+20250305;638768134100571612;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:50.0571636Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0417360;String
+20250305;638768134101844924;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:50.1844949Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0398267;String
+20250305;638768134162536147;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:56.2536164Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0405086;String
+20250305;638768134163010385;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:16:56.3010409Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0395939;String
+20250305;638768134247714644;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:17:04.7714666Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0376279;String
+20250305;638768134248171914;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:17:04.8171933Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0392252;String
+20250305;638768134444690464;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:17:24.4690483Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0410558;String
+20250305;638768134445322370;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:17:24.5322479Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0515250;String
+20250305;638768134728385425;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsMedicalAppointments.Backend.ExternalServices.Referentials.ClientWebBase`1.Get(IDictionary`2 parameters) in D:\a\1\s\Consorcio.CsMedicalAppointments.Backend\Consorcio.CsMedicalAppointments.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 308";String;2025-03-05T18:17:52.8385557Z;DateTime;MedicalAppointments;String;REST_ErrorExternalService;String;1012331441;String;1;String;https://apispru.compensarsalud.com/wconsultassas-aut-rst/v1.0//Incumplimientos;String;;;"""sApl=SWPR135&TipoIdentificacion=1&Identificacion=1012331441&Opcion=1&Formato=JSON""";String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0000679;String
+20250305;638768135027707849;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:18:22.7707874Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0390517;String
+20250305;638768135028200376;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:18:22.8200395Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0409972;String
+20250305;638768135250749650;[GetAppointmentInfoPdf] There is an error in XML document (1, 1).;String;2025-03-05T18:18:45.075018Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768135616305663;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:19:21.6305682Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0376347;String
+20250305;638768135616778643;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:19:21.6778673Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0396474;String
+20250305;638768136183395825;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:20:18.3396377Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0416305;String
+20250305;638768136183971446;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:20:18.3971477Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0421596;String
+20250305;638768136482514810;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:20:48.2514835Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0439035;String
+20250305;638768136483178828;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:20:48.317886Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0389649;String
+20250305;638768136767801913;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:21:16.7801931Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0395628;String
+20250305;638768136768269933;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:21:16.8269948Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0387971;String
+20250305;638768137192479449;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:21:59.2479475Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0403734;String
+20250305;638768137192973471;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:21:59.2973492Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0407594;String
+20250305;638768137344211451;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:22:14.4211482Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0397289;String
+20250305;638768137364915465;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:22:16.4915483Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:02.0613111;String
+20250305;638768137398477640;[GetAppointmentInfoPdf] The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.;String;2025-03-05T18:22:19.847865Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250305;638768138409674916;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:00.9674942Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.2091188;String
+20250305;638768138410218470;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:01.0218489Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0455327;String
+20250305;638768138443358874;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:04.3358897Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0507401;String
+20250305;638768138443894463;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:04.3894479Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0453819;String
+20250305;638768138483167089;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:08.3167111Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0607229;String
+20250305;638768138483693951;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:24:08.3693971Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0458409;String
+20250305;638768139551162287;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:25:55.1162315Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250305;String;sApl=SWPR135&Opcion=1&IDAfiliado=1020790170&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:01.3982312;String
+20250305;638768139558980157;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-05T18:25:55.8980176Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250305;String;sApl=SWPR135&iOpc=54&dIdentificacion=1020790170&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.4562352;String
+20250305;638768140346161741;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:27:14.6161763Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768147346555850;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T18:38:54.6555882Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768181056567558;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T19:35:05.6567583Z;DateTime;Authentication;String;STO_Error;String;1012331441;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768206639716321;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T20:17:43.9716783Z;DateTime;Authentication;String;STO_Error;String;52272785;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768255319310964;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T21:38:51.931099Z;DateTime;Authentication;String;STO_Error;String;52901193;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768256630582825;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T21:41:03.0582851Z;DateTime;Authentication;String;STO_Error;String;79690333;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768257350853993;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T21:42:15.086808Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250305;638768258323371343;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-05T21:43:52.3371653Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250305;String;;;;;;
+20250306;638768697900679440;[GetAppointmentInfoPdf] There is an error in XML document (1, 95233).;String;2025-03-06T09:56:30.067994Z;DateTime;MedicalAppointments;String;FTP_Error;String;;;;;;;;;;;;;;
+20250306;638768734563532261;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-06T10:57:36.3532286Z;DateTime;Authentication;String;STO_Error;String;1020790170;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250306;String;;;;;;
+20250306;638768939685851392;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-06T16:39:28.5851908Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250306;String;;;;;;
+20250306;638768946577387166;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-06T16:50:57.738719Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250306;String;;;;;;
+20250306;638768962661345097;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-06T17:17:46.1345402Z;DateTime;Authentication;String;STO_Error;String;1012331441;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250306;String;;;;;;
+20250307;638769700891755338;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T13:48:09.1758472Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769755138591644;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T15:18:33.8591683Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769788126565680;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T16:13:32.6668557Z;DateTime;Authentication;String;STO_Error;String;1073683890;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769791537414234;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T16:19:13.7414264Z;DateTime;Authentication;String;STO_Error;String;1073683890;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769816153017877;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T17:00:15.3018334Z;DateTime;Authentication;String;STO_Error;String;1073683890;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769824595185028;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T17:14:19.5185066Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769828927195260;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T17:21:32.7195286Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769842897539314;No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1');String;2025-03-07T17:44:49.7539676Z;DateTime;Authentication;String;STO_Error;String;5029910;String;1;String;GetByPartitionKeyAndRowKeyAsync;String;20250307;String;;;;;;
+20250307;638769854701968004;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:04:30.1990515Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250307;String;sApl=SWPR135&Opcion=1&IDAfiliado=1073683890&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:01.6950987;String
+20250307;638769854702536467;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:04:30.2536484Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250307;String;sApl=SWPR135&iOpc=54&dIdentificacion=1073683890&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0425867;String
+20250307;638769856052239774;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:06:45.2239985Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250307;String;sApl=SWPR135&Opcion=1&IDAfiliado=1073683890&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.2278275;String
+20250307;638769856052838472;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:06:45.283849Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250307;String;sApl=SWPR135&iOpc=54&dIdentificacion=1073683890&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0490554;String
+20250307;638769857968970374;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:09:56.8970407Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250307;String;sApl=SWPR135&Opcion=1&IDAfiliado=1073683890&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1805386;String
+20250307;638769857969584134;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:09:56.958415Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250307;String;sApl=SWPR135&iOpc=54&dIdentificacion=1073683890&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.0530376;String
+20250307;638769865669223865;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:22:46.9318358Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250307;String;sApl=SWPR135&Opcion=1&IDAfiliado=1073683890&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1722175;String
+20250307;638769865672305495;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:22:47.2305517Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/Afiliado;String;20250307;String;sApl=SWPR135&iOpc=54&dIdentificacion=1073683890&iTipo=1&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1592555;String
+20250307;638769877019748303;"Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\a\1\s\Consorcio.CsAuthenticate.Backend\Consorcio.CsAuthenticate.Backend.ExternalServices\Referentials\ClientWebBase.cs:line 414";String;2025-03-07T18:41:41.9775426Z;DateTime;Authentication;String;REST_ErrorExternalService;String;;;;;https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado;String;20250307;String;sApl=SWPR135&Opcion=1&IDAfiliado=1073683890&TIDAfiliado=1&CodEPS=008&Formato=JSON;String;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";String;00:00:00.1721965;String
