@@ -15,7 +15,15 @@ public class TableReadService : ITableReadService
 
     private string? ResolveConnectionString(string applicationName)
     {
-        // Map applicationName to environment variable key
+        // First try to get from ConnectionStrings section
+        var connectionString = _configuration.GetConnectionString(applicationName);
+        
+        if (!string.IsNullOrEmpty(connectionString))
+        {
+            return connectionString;
+        }
+
+        // Fallback to environment variable key mapping for production
         var key = applicationName switch
         {
             "AppSalud" => "AZURE_STORAGE_CONNECTIONSTRING_APPSALUD",
@@ -83,8 +91,10 @@ public class TableReadService : ITableReadService
                     continue;
                 }
 
-                // Build filter
-                var filter = TableClient.CreateQueryFilter($"Timestamp ge @start and Timestamp le @end", new { start = request.StartDateUtc, end = request.EndDateUtc });
+                // Build OData filter string for Timestamp (UTC)
+                var startUtc = request.StartDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
+                var endUtc = request.EndDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
+                var filter = $"Timestamp ge datetime'{startUtc}' and Timestamp le datetime'{endUtc}'";
 
                 var entities = tableClient.QueryAsync<TableEntity>(filter: filter);
 
