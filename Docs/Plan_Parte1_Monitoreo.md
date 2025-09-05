@@ -175,7 +175,7 @@ Requerimientos adicionales solicitados
 -------------------------------------
 Se solicita que la primera parte incluya los siguientes elementos de implementación y configuración:
 
-1. Implementar un proyecto ASP.NET Core Web API con .NET 10 para la Parte 1 (ingest/consulta).
+1. Implementar un proyecto ASP.NET Core Web API con .NET 9 para la Parte 1 (ingest/consulta).
    - Estructura mínima: Controllers, Services, Models, Repositories.
    - Proveer endpoints para recibir el JSON request y devolver la respuesta por tabla.
 2. Documentación automática: integrar Swagger (OpenAPI) con UI activada en entornos de desarrollo.
@@ -217,3 +217,11 @@ Aprobación
 Estado: Aprobado por el solicitante.
 Fecha de aceptación: 2025-09-04
 Notas: El plan queda listo para pasar a la fase de implementación según los hitos y supuestos aquí descritos. Si se requieren cambios (por ejemplo `maxRecords` global vs por tabla o inclusión de secretos en Key Vault), documentarlos antes de iniciar la implementación.
+
+Cambios realizados (resumen corto)
+---------------------------------
+- Se creó una plantilla de proyecto ASP.NET Core Web API en `src/MonitoreoStorage.Api` con endpoint POST `/api/logs/query`.
+- Se integró Swagger/OpenAPI para documentación automática en entorno de desarrollo.
+- Se implementó el servicio `TableReadService` que consulta Azure Table Storage y aplica truncamiento a `maxRecords` por tabla.
+- Se añadió `appsettings.Development.json` con placeholders y el script `scripts/populate-appsettings.ps1` para poblarlo localmente (archivo ignorado por Git).
+- Se añadió `README.md` del proyecto con instrucciones de seguridad y ejemplo para Key Vault.

@@ -2,17 +2,29 @@ using Azure;
 using Azure.Data.Tables;
 using MonitoreoStorage.Api.Models;
 
-namespace MonitoreoStorage.Api.Services;
-
-public class TableReadService : ITableReadService
+namespace MonitoreoStorage.Api.Services
 {
+    /// <summary>
+    /// Implementación del servicio que consulta tablas de Azure Storage y devuelve los registros solicitados.
+    /// </summary>
+    public class TableReadService : ITableReadService
+    {
     private readonly IConfiguration _configuration;
 
+    /// <summary>
+    /// Crea una nueva instancia de <see cref="TableReadService"/>.
+    /// </summary>
+    /// <param name="configuration">Proveedor de configuración para resolver connection strings.</param>
     public TableReadService(IConfiguration configuration)
     {
         _configuration = configuration;
     }
 
+    /// <summary>
+    /// Resuelve la cadena de conexión asociada a un nombre de aplicación.
+    /// </summary>
+    /// <param name="applicationName">Nombre lógico de la aplicación (por ejemplo "AppSalud").</param>
+    /// <returns>Connection string si existe; en caso contrario null.</returns>
     private string? ResolveConnectionString(string applicationName)
     {
         // First try to get from ConnectionStrings section
@@ -35,6 +47,11 @@ public class TableReadService : ITableReadService
         return _configuration[key];
     }
 
+    /// <summary>
+    /// Consulta las tablas indicadas en el request, aplica el filtro por Timestamp y retorna hasta <c>MaxRecords</c> por tabla.
+    /// </summary>
+    /// <param name="request">Parámetros de consulta.</param>
+    /// <returns>Respuesta con resultados por tabla.</returns>
     public async Task<LogsQueryResponse> QueryTablesAsync(LogsQueryRequest request)
     {
         var response = new LogsQueryResponse { ApplicationName = request.ApplicationName };
@@ -43,7 +60,7 @@ public class TableReadService : ITableReadService
         var connStr = ResolveConnectionString(request.ApplicationName);
         if (string.IsNullOrEmpty(connStr))
         {
-            // Return error for all requested tables
+            // Devolver error para cada tabla solicitada si no existe la cadena de conexión
             foreach (var t in request.TablesToAnalyze)
             {
                 results.Add(new TableQueryResult
@@ -76,7 +93,7 @@ public class TableReadService : ITableReadService
             try
             {
                 var tableClient = serviceClient.GetTableClient(tableName);
-                // Check table exists by retrieving properties
+                // Verificar existencia de la tabla
                 try
                 {
                     await tableClient.GetAccessPoliciesAsync();
@@ -91,7 +108,7 @@ public class TableReadService : ITableReadService
                     continue;
                 }
 
-                // Build OData filter string for Timestamp (UTC)
+                // Construir filtro OData para Timestamp en UTC
                 var startUtc = request.StartDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
                 var endUtc = request.EndDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
                 var filter = $"Timestamp ge datetime'{startUtc}' and Timestamp le datetime'{endUtc}'";
@@ -102,14 +119,14 @@ public class TableReadService : ITableReadService
                 await foreach (var ent in entities)
                 {
                     if (collected.Count >= request.MaxRecords) break;
-                    // Normalize basic properties
+                    // Normalizar propiedades básicas
                     var obj = new Dictionary<string, object?>();
                     foreach (var prop in ent)
                     {
                         obj[prop.Key] = prop.Value;
                     }
 
-                    // Ensure Timestamp is in ISO-8601
+                    // Asegurar formato ISO-8601 para Timestamp
                     if (ent.TryGetValue("Timestamp", out var ts) && ts is DateTimeOffset dto)
                     {
                         obj["Timestamp"] = dto.UtcDateTime.ToString("o");
@@ -135,5 +152,6 @@ public class TableReadService : ITableReadService
 
         response.TableResults = results.ToArray();
         return response;
+    }
     }
 }
