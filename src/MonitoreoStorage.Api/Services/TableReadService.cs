@@ -125,14 +125,32 @@ namespace MonitoreoStorage.Api.Services
                 await foreach (var ent in entities)
                 {
                     if (collected.Count >= request.MaxRecords) break;
-                    // Normalizar propiedades básicas, excluyendo campos odata
+                    
                     var obj = new Dictionary<string, object?>();
-                    foreach (var prop in ent)
+
+                    if (request.ApplicationName == "AppSalud")
                     {
-                        // Excluir campos que comienzan con "odata." como odata.etag
-                        if (!prop.Key.StartsWith("odata.", StringComparison.OrdinalIgnoreCase))
+                        // Para AppSalud, solo retornar campos específicos
+                        var fieldsToInclude = new[] { "RowKey", "Timestamp", "DocumentNumber", "DocumentType", "Type", "NameMethod", "Exception" };
+                        
+                        foreach (var field in fieldsToInclude)
                         {
-                            obj[prop.Key] = prop.Value;
+                            if (ent.TryGetValue(field, out var value))
+                            {
+                                obj[field] = value;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // Para otras aplicaciones, normalizar propiedades básicas excluyendo campos odata
+                        foreach (var prop in ent)
+                        {
+                            // Excluir campos que comienzan con "odata." como odata.etag
+                            if (!prop.Key.StartsWith("odata.", StringComparison.OrdinalIgnoreCase))
+                            {
+                                obj[prop.Key] = prop.Value;
+                            }
                         }
                     }
 
