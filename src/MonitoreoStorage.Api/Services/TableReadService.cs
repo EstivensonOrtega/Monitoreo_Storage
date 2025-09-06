@@ -113,17 +113,27 @@ namespace MonitoreoStorage.Api.Services
                 var endUtc = request.EndDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
                 var filter = $"Timestamp ge datetime'{startUtc}' and Timestamp le datetime'{endUtc}'";
 
+                // Agregar filtro adicional para AppSalud: excluir tipos específicos
+                if (request.ApplicationName == "AppSalud")
+                {
+                    filter += " and Type ne 'REST_ExternalServiceTraceability' and Type ne 'SOAP_ExternalServiceTraceability'";
+                }
+
                 var entities = tableClient.QueryAsync<TableEntity>(filter: filter);
 
                 var collected = new List<object>();
                 await foreach (var ent in entities)
                 {
                     if (collected.Count >= request.MaxRecords) break;
-                    // Normalizar propiedades básicas
+                    // Normalizar propiedades básicas, excluyendo campos odata
                     var obj = new Dictionary<string, object?>();
                     foreach (var prop in ent)
                     {
-                        obj[prop.Key] = prop.Value;
+                        // Excluir campos que comienzan con "odata." como odata.etag
+                        if (!prop.Key.StartsWith("odata.", StringComparison.OrdinalIgnoreCase))
+                        {
+                            obj[prop.Key] = prop.Value;
+                        }
                     }
 
                     // Asegurar formato ISO-8601 para Timestamp
