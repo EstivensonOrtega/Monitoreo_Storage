@@ -218,10 +218,76 @@ Estado: Aprobado por el solicitante.
 Fecha de aceptación: 2025-09-04
 Notas: El plan queda listo para pasar a la fase de implementación según los hitos y supuestos aquí descritos. Si se requieren cambios (por ejemplo `maxRecords` global vs por tabla o inclusión de secretos en Key Vault), documentarlos antes de iniciar la implementación.
 
-Cambios realizados (resumen corto)
+Cambios realizados (resumen completo)
 ---------------------------------
+### Implementación inicial (2025-09-04)
 - Se creó una plantilla de proyecto ASP.NET Core Web API en `src/MonitoreoStorage.Api` con endpoint POST `/api/logs/query`.
 - Se integró Swagger/OpenAPI para documentación automática en entorno de desarrollo.
 - Se implementó el servicio `TableReadService` que consulta Azure Table Storage y aplica truncamiento a `maxRecords` por tabla.
 - Se añadió `appsettings.Development.json` con placeholders y el script `scripts/populate-appsettings.ps1` para poblarlo localmente (archivo ignorado por Git).
 - Se añadió `README.md` del proyecto con instrucciones de seguridad y ejemplo para Key Vault.
+
+### Documentación en español (2025-09-05)
+- Se añadió documentación XML completa en español a todos los controladores, servicios y modelos.
+- Se tradujo toda la documentación interna del código al español para mayor legibilidad.
+
+### Filtrado específico para AppSalud (2025-09-05)
+- Se implementó lógica de filtrado específica para la aplicación "AppSalud":
+  - Exclusión de campos `odata.etag` en todas las respuestas
+  - Retorno de campos específicos para AppSalud: `RowKey`, `Timestamp`, `TimeService`, `DocumentNumber`, `DocumentType`, `Type`, `NameMethod`, `Exception`
+  - Exclusión de tipos `REST_ExternalServiceTraceability` y `SOAP_ExternalServiceTraceability`
+
+### Funcionalidad de filtrado por tiempo de respuesta (2025-09-06)
+- Se añadió la propiedad `MaxResponseTimeMs` al modelo `LogsQueryRequest` para filtrar registros por tiempo de respuesta.
+- Se implementó lógica de filtrado post-consulta que:
+  1. **Filtra por tipo:** Excluye registros con tipos específicos (`REST_ExternalServiceTraceability`, `SOAP_ExternalServiceTraceability`)
+  2. **Filtra por tiempo:** Incluye registros donde `TimeService > MaxResponseTimeMs` (para detectar respuestas lentas)
+  3. **Concatena y deduplica:** Combina ambos conjuntos y elimina duplicados usando `RowKey` como identificador único
+- Se corrigió la conversión de `TimeService` de formato `TimeSpan` ("00:00:17.7765897") a milisegundos para comparación correcta.
+
+### Estructura final del proyecto
+```
+src/MonitoreoStorage.Api/
+├── Controllers/LogsController.cs           # Endpoint principal con documentación XML
+├── Services/
+│   ├── ITableReadService.cs               # Interfaz del servicio
+│   └── TableReadService.cs                # Implementación con filtrado complejo
+├── Models/
+│   ├── LogsQueryRequest.cs                # Modelo de petición con MaxResponseTimeMs
+│   ├── LogsQueryResponse.cs               # Modelo de respuesta
+│   └── TableQueryResult.cs                # Resultado por tabla
+├── appsettings.json                       # Configuración base
+├── appsettings.Development.json           # Configuración con placeholders (git ignored)
+└── Program.cs                             # Configuración de servicios y Swagger
+
+scripts/
+└── populate-appsettings.ps1               # Script para configuración local segura
+
+Docs/
+├── Plan_Parte1_Monitoreo.md              # Este documento
+├── README.md                              # Instrucciones del proyecto
+└── [archivos de análisis originales]
+```
+
+### Estado actual de funcionalidades
+✅ **Completado:**
+- Consulta básica a Azure Table Storage con filtros de fecha
+- Respeto al límite `MaxRecords` por tabla
+- Manejo de errores (tabla no encontrada, conexión fallida)
+- Documentación Swagger/OpenAPI
+- Documentación XML en español
+- Filtrado específico para AppSalud con campos personalizados
+- Filtrado por tipos excluidos y tiempo de respuesta
+- Deduplicación de registros basada en RowKey
+- Conversión correcta de TimeSpan a milisegundos
+
+✅ **Seguridad implementada:**
+- Connection strings no hardcodeados
+- Uso de placeholders para secretos
+- Script de configuración local
+- Archivo de configuración en .gitignore
+
+🔄 **Pendiente para Parte 2:**
+- Análisis de logs con LLM
+- Generación de alertas y reportes
+- Integración con sistemas de notificación

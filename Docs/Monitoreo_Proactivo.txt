@@ -1,33 +1,33 @@
 HU - TEC Monitoreo del Storage Account en busca proactiva de errores
-Como equipo técnico
-Necesito monitorear periódicamente las tablas de log de los aplicativos AppSalud y LinaChatbot
-Para detectar proactivamente errores y sugerir acciones de resolución o escalamiento
+Como equipo tï¿½cnico
+Necesito monitorear las tablas de log de los aplicativos AppSalud y LinaChatbot
+Para detectar proactivamente errores y sugerir acciones de resoluciï¿½n o escalamiento
 
-Escenario: Monitoreo periódico y análisis de errores en Storage Accounts
+Escenario: Monitoreo periï¿½dico y anï¿½lisis de errores en Storage Accounts
   Dado que existen tablas de log en los Storage Accounts de AppSalud y LinaChatbot
-  Cuando se recolecta la información de las tablas
-  Entonces se debe analizar la información en busca de:
+  Cuando se recolecta la informaciï¿½n de las tablas
+  Entonces se debe analizar la informaciï¿½n en busca de:
     - errores de servicios externos
-    - errores internos recurrentes de la aplicación
-    - tiempos de respuesta elevados según el tipo de servicio
+    - errores internos recurrentes de la aplicaciï¿½n
+    - tiempos de respuesta elevados segï¿½n el tipo de servicio
 
-  Y se deben aplicar filtros o modelos de lenguaje (LLM) para identificar posibles acciones de resolución
+  Y se deben aplicar filtros o modelos de lenguaje (LLM) para identificar posibles acciones de resoluciï¿½n
 
 Y si se identifica que el error requiere escalamiento
-  Entonces se debe enviar una notificación automática a un canal de atención (Telegram, correo, etc.) elegido por el desarrollador
+  Entonces se debe enviar una notificaciï¿½n automï¿½tica a un canal de atenciï¿½n (Telegram, correo, etc.) elegido por el desarrollador
 
-Criterios de aceptación:
+Criterios de aceptaciï¿½n:
 - Se debe definir la cantidad de datos para el muestreo
 - Se deben consultar las tablas de log de AppSalud y LinaChatbot
 - Se deben identificar errores de servicio externos, internos recurrentes, y tiempos altos de respuesta
-- Se debe permitir al desarrollador seleccionar el canal de notificación
-- Se debe generar una notificación automática si se requiere escalamiento
-- Se debe registrar la acción sugerida o ejecutada en un log de auditoría
+- Se debe permitir al desarrollador seleccionar el canal de notificaciï¿½n
+- Se debe generar una notificaciï¿½n automï¿½tica si se requiere escalamiento
+- Se debe registrar la acciï¿½n sugerida o ejecutada en un log de auditorï¿½a
 
-Criterios de aceptación adicionales:
-  - Se debe validar que el modelo de IA pueda diferenciar entre errores críticos y no críticos.
+Criterios de aceptaciï¿½n adicionales:
+  - Se debe validar que el modelo de IA pueda diferenciar entre errores crï¿½ticos y no crï¿½ticos.
   - Se debe permitir configurar umbrales personalizados para tiempos de respuesta por tipo de servicio.
-  - Se debe documentar la lógica de análisis utilizada para detectar errores y sugerencias.
+  - Se debe documentar la lï¿½gica de anï¿½lisis utilizada para detectar errores y sugerencias.
 
 
 

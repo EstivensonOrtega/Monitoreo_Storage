@@ -29,4 +29,9 @@ public class LogsQueryRequest
     /// Límite de registros a retornar por tabla.
     /// </summary>
     public int MaxRecords { get; set; } = 10;
+
+    /// <summary>
+    /// Tiempo máximo de respuesta en milisegundos para filtrar registros lentos.
+    /// </summary>
+    public int? MaxResponseTimeMs { get; set; }
 }

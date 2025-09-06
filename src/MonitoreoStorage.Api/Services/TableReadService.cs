@@ -113,12 +113,6 @@ namespace MonitoreoStorage.Api.Services
                 var endUtc = request.EndDateUtc.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss'Z'");
                 var filter = $"Timestamp ge datetime'{startUtc}' and Timestamp le datetime'{endUtc}'";
 
-                // Agregar filtro adicional para AppSalud: excluir tipos específicos
-                if (request.ApplicationName == "AppSalud")
-                {
-                    filter += " and Type ne 'REST_ExternalServiceTraceability' and Type ne 'SOAP_ExternalServiceTraceability'";
-                }
-
                 var entities = tableClient.QueryAsync<TableEntity>(filter: filter);
 
                 var collected = new List<object>();
@@ -131,8 +125,8 @@ namespace MonitoreoStorage.Api.Services
                     if (request.ApplicationName == "AppSalud")
                     {
                         // Para AppSalud, solo retornar campos específicos
-                        var fieldsToInclude = new[] { "RowKey", "Timestamp", "DocumentNumber", "DocumentType", "Type", "NameMethod", "Exception" };
-                        
+                        var fieldsToInclude = new[] { "RowKey", "Timestamp", "TimeService", "DocumentNumber", "DocumentType", "Type", "NameMethod", "Exception" };
+
                         foreach (var field in fieldsToInclude)
                         {
                             if (ent.TryGetValue(field, out var value))
@@ -161,6 +155,57 @@ namespace MonitoreoStorage.Api.Services
                     }
 
                     collected.Add(obj);
+                }
+
+                // Aplicar filtros específicos para AppSalud antes de retornar la respuesta
+                if (request.ApplicationName == "AppSalud")
+                {
+                    // 1. Excluir registros con tipos específicos
+                    var filteredByType = collected.Where(record =>
+                    {
+                        if (record is Dictionary<string, object?> dict && dict.TryGetValue("Type", out var typeValue))
+                        {
+                            var typeStr = typeValue?.ToString();
+                            return typeStr != "REST_ExternalServiceTraceability" && typeStr != "SOAP_ExternalServiceTraceability";
+                        }
+                        return true; // Incluir si no tiene Type
+                    }).ToList();
+
+                    // 2. Obtener registros donde TimeService > MaxResponseTimeMs
+                    var filteredByTimeService = new List<object>();
+                    if (request.MaxResponseTimeMs.HasValue)
+                    {
+                        filteredByTimeService = collected.Where(record =>
+                        {
+                            if (record is Dictionary<string, object?> dict && dict.TryGetValue("TimeService", out var timeServiceValue))
+                            {
+                                if (timeServiceValue != null && TimeSpan.TryParse(timeServiceValue.ToString(), out var timeService))
+                                {
+                                    // Convertir TimeSpan a milisegundos para comparar
+                                    var timeServiceMs = (int)timeService.TotalMilliseconds;
+                                    return timeServiceMs > request.MaxResponseTimeMs.Value;
+                                }
+                            }
+                            return false; // No incluir si TimeService es null o no se puede parsear
+                        }).ToList();
+                    }
+
+                    // 3. Concatenar y eliminar duplicados usando RowKey como identificador único
+                    var combinedResults = filteredByType.Concat(filteredByTimeService).ToList();
+                    
+                    // Eliminar duplicados basándose en RowKey
+                    collected = combinedResults
+                        .GroupBy(record => 
+                        {
+                            if (record is Dictionary<string, object?> dict && dict.TryGetValue("RowKey", out var rowKeyValue))
+                            {
+                                return rowKeyValue?.ToString() ?? string.Empty;
+                            }
+                            return string.Empty;
+                        })
+                        .Where(group => !string.IsNullOrEmpty(group.Key))
+                        .Select(group => group.First())
+                        .ToList();                    
                 }
 
                 tableResult.Records = collected.ToArray();

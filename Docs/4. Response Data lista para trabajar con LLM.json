@@ -1,0 +1,375 @@
+{
+    "applicationName": "AppSalud",
+    "tableResults": [
+        {
+            "tableName": "AppLog",
+            "startDateUtc": "2025-08-06T17:27:45.6184774Z",
+            "endDateUtc": "2025-09-05T22:27:45.6184774Z",
+            "recordsReturned": 47,
+            "records": [
+                {
+                    "RowKey": "638901011564777859",
+                    "Timestamp": "2025-08-06T18:19:16.5241933Z",
+                    "TimeService": "00:00:40.2508458",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638901047814218357",
+                    "Timestamp": "2025-08-06T19:19:41.4597630Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638901048805003970",
+                    "Timestamp": "2025-08-06T19:21:20.5467015Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638901050083505132",
+                    "Timestamp": "2025-08-06T19:23:28.3810833Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638901052961676036",
+                    "Timestamp": "2025-08-06T19:28:16.1971406Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638901053959110114",
+                    "Timestamp": "2025-08-06T19:29:55.9387090Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638901054999492919",
+                    "Timestamp": "2025-08-06T19:31:39.9776556Z",
+                    "DocumentNumber": "1073683890",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638902742859834925",
+                    "Timestamp": "2025-08-08T18:24:46.0672815Z",
+                    "TimeService": "00:00:40.2102596",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638902743495891702",
+                    "Timestamp": "2025-08-08T18:25:49.6059103Z",
+                    "TimeService": "00:00:40.0499565",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638902744198329545",
+                    "Timestamp": "2025-08-08T18:26:59.8496843Z",
+                    "TimeService": "00:00:40.0400582",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638902751438476455",
+                    "Timestamp": "2025-08-08T18:39:03.8737430Z",
+                    "DocumentNumber": "52998585",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638902753528187449",
+                    "Timestamp": "2025-08-08T18:42:32.8313444Z",
+                    "DocumentNumber": "1000006529",
+                    "DocumentType": "1",
+                    "Type": "STO_Error",
+                    "NameMethod": "GetByPartitionKeyAndRowKeyAsync",
+                    "Exception": "No encontró registros en la tabla ApplicationParameter que cumplan con el filtro: (PartitionKey eq '80') and (RowKey eq '1')"
+                },
+                {
+                    "RowKey": "638905183470115653",
+                    "Timestamp": "2025-08-11T14:12:27.2018802Z",
+                    "TimeService": "00:00:40.2530120",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonTextReader.Read()\r\n   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905184256687286",
+                    "Timestamp": "2025-08-11T14:13:45.6806810Z",
+                    "TimeService": "00:00:40.0339789",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonTextReader.Read()\r\n   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905184509538368",
+                    "Timestamp": "2025-08-11T14:14:10.9614796Z",
+                    "TimeService": "00:00:40.3290739",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905187156491648",
+                    "Timestamp": "2025-08-11T14:18:35.6610716Z",
+                    "TimeService": "00:00:40.2838179",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905195450363378",
+                    "Timestamp": "2025-08-11T14:32:25.0538392Z",
+                    "TimeService": "00:00:40.1391807",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905195924551956",
+                    "Timestamp": "2025-08-11T14:33:12.4670560Z",
+                    "TimeService": "00:00:40.0940938",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905198998840579",
+                    "Timestamp": "2025-08-11T14:38:19.9040925Z",
+                    "TimeService": "00:00:40.1313212",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905200939370946",
+                    "Timestamp": "2025-08-11T14:41:33.9516194Z",
+                    "TimeService": "00:00:40.1630140",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638905210789964520",
+                    "Timestamp": "2025-08-11T14:57:59.0433244Z",
+                    "TimeService": "00:00:40.2642687",
+                    "Type": "REST_ErrorExternalService",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado",
+                    "Exception": "Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.\r\n   at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   at Consorcio.CsAuthenticate.Backend.ExternalServices.Referentials.ClientWebBase`1.GetAsync(IDictionary`2 parameters, TokenConsorcioResponse token) in D:\\a\\1\\s\\Consorcio.CsAuthenticate.Backend\\Consorcio.CsAuthenticate.Backend.ExternalServices\\Referentials\\ClientWebBase.cs:line 414"
+                },
+                {
+                    "RowKey": "638900993827497099",
+                    "Timestamp": "2025-08-06T17:49:42.7874508Z",
+                    "TimeService": "00:00:12.6764792",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638900993956789213",
+                    "Timestamp": "2025-08-06T17:49:55.7068158Z",
+                    "TimeService": "00:00:12.5898231",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638900995010150516",
+                    "Timestamp": "2025-08-06T17:51:41.0478723Z",
+                    "TimeService": "00:00:12.6863901",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638900995133197182",
+                    "Timestamp": "2025-08-06T17:51:53.3566648Z",
+                    "TimeService": "00:00:12.2021406",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638900995768034259",
+                    "Timestamp": "2025-08-06T17:52:56.8375701Z",
+                    "TimeService": "00:00:12.8747929",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638900995893873158",
+                    "Timestamp": "2025-08-06T17:53:09.4192320Z",
+                    "TimeService": "00:00:12.4932822",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901047641544909",
+                    "Timestamp": "2025-08-06T19:19:24.1988102Z",
+                    "TimeService": "00:00:12.7812261",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901047763456127",
+                    "Timestamp": "2025-08-06T19:19:36.3797191Z",
+                    "TimeService": "00:00:12.0586326",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901048607618406",
+                    "Timestamp": "2025-08-06T19:21:00.7950889Z",
+                    "TimeService": "00:00:12.4963335",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901048731390432",
+                    "Timestamp": "2025-08-06T19:21:13.1703188Z",
+                    "TimeService": "00:00:12.2842676",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901049878773750",
+                    "Timestamp": "2025-08-06T19:23:07.9095201Z",
+                    "TimeService": "00:00:12.5187743",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901049999221944",
+                    "Timestamp": "2025-08-06T19:23:19.9521980Z",
+                    "TimeService": "00:00:11.9504391",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901051439252414",
+                    "Timestamp": "2025-08-06T19:25:43.9572263Z",
+                    "TimeService": "00:00:12.1445510",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901051561436076",
+                    "Timestamp": "2025-08-06T19:25:56.1734251Z",
+                    "TimeService": "00:00:12.1219963",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901052306121833",
+                    "Timestamp": "2025-08-06T19:27:10.6405696Z",
+                    "TimeService": "00:00:12.2795897",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901052429953824",
+                    "Timestamp": "2025-08-06T19:27:23.0218817Z",
+                    "TimeService": "00:00:12.1767792",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901053520995104",
+                    "Timestamp": "2025-08-06T19:29:12.1281167Z",
+                    "TimeService": "00:00:12.6058168",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901053648099780",
+                    "Timestamp": "2025-08-06T19:29:24.8384355Z",
+                    "TimeService": "00:00:12.6083306",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901054808838914",
+                    "Timestamp": "2025-08-06T19:31:20.9109695Z",
+                    "TimeService": "00:00:12.3361898",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638901054931803427",
+                    "Timestamp": "2025-08-06T19:31:33.2066721Z",
+                    "TimeService": "00:00:12.1968654",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638902750611311863",
+                    "Timestamp": "2025-08-08T18:37:41.1489451Z",
+                    "TimeService": "00:00:12.2279538",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638902750732292430",
+                    "Timestamp": "2025-08-08T18:37:53.2436689Z",
+                    "TimeService": "00:00:11.9316794",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638902751744569092",
+                    "Timestamp": "2025-08-08T18:39:34.4727322Z",
+                    "TimeService": "00:00:09.1169744",
+                    "DocumentNumber": "52998585",
+                    "DocumentType": "1",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wscersalud"
+                },
+                {
+                    "RowKey": "638902753508515538",
+                    "Timestamp": "2025-08-08T18:42:30.8665299Z",
+                    "TimeService": "00:00:11.9501939",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638902773932480172",
+                    "Timestamp": "2025-08-08T19:16:33.2746891Z",
+                    "TimeService": "00:00:12.1067814",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                },
+                {
+                    "RowKey": "638902774050684182",
+                    "Timestamp": "2025-08-08T19:16:45.0895534Z",
+                    "TimeService": "00:00:11.6649098",
+                    "Type": "REST_ExternalServiceTraceability",
+                    "NameMethod": "https://apispru.compensarsalud.com/wconsultassas-afi-rst/v1.0/ConsultarAfiliado"
+                }
+            ],
+            "status": "OK",
+            "errorMessage": null
+        }
+    ]
+}
