@@ -1,0 +1,55 @@
+{
+  "applications": {
+    "AppSalud": {
+      "responseTimeThresholds": {
+        "ConsultarAfiliado": 5000,
+        "AuthenticationService": 2000,
+        "CsAuthenticate": 3000,
+        "ExternalService": 4000,
+        "default": 3000
+      },
+      "errorPatterns": {
+        "critical": [
+          "JsonReaderException",
+          "ConnectionTimeout",
+          "OutOfMemoryException",
+          "StackOverflowException",
+          "SqlException",
+          "TimeoutException",
+          "UnauthorizedAccessException"
+        ],
+        "warning": [
+          "ValidationError",
+          "SlowResponse",
+          "RetryableError",
+          "ConfigurationError",
+          "NetworkError"
+        ]
+      },
+      "recurrenceThreshold": 3
+    },
+    "LinaChatbot": {
+      "responseTimeThresholds": {
+        "MessageProcessing": 1000,
+        "IntentRecognition": 2000,
+        "ResponseGeneration": 3000,
+        "default": 2000
+      },
+      "errorPatterns": {
+        "critical": [
+          "MessageDeliveryFailure",
+          "AuthenticationFailure",
+          "DatabaseConnectionFailure",
+          "ServiceUnavailable"
+        ],
+        "warning": [
+          "SlowProcessing",
+          "RetryableError",
+          "IntentNotRecognized",
+          "LowConfidenceResponse"
+        ]
+      },
+      "recurrenceThreshold": 2
+    }
+  }
+}

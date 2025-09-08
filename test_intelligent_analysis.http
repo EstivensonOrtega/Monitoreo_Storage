@@ -1,0 +1,45 @@
+### Test de Análisis Inteligente - Endpoint de Health Check
+GET https://localhost:49878/api/analysis/status
+Content-Type: application/json
+
+###
+
+### Test de Análisis Inteligente - Modo Básico
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "TestApp",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions"],
+  "startTime": "2024-01-01T00:00:00Z",
+  "endTime": "2024-01-01T23:59:59Z",
+  "analysisMode": "basic"
+}
+
+###
+
+### Test de Análisis Inteligente - Modo Inteligente
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "TestApp",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions"],
+  "startTime": "2024-01-01T00:00:00Z",
+  "endTime": "2024-01-01T23:59:59Z",
+  "analysisMode": "intelligent"
+}
+
+###
+
+### Test con datos de prueba que contienen errores simulados
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "ECommerceApp",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions", "AppRequests"],
+  "startTime": "2024-01-15T00:00:00Z",
+  "endTime": "2024-01-15T23:59:59Z",
+  "analysisMode": "intelligent"
+}

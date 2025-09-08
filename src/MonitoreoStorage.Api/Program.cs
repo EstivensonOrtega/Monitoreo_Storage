@@ -14,8 +14,19 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "MonitoreoStorage API", Version = "v1" });
 });
 
-// Register our service
+// Register our services
 builder.Services.AddSingleton<ITableReadService, TableReadService>();
+
+// Register new services for Parte 2 (Analysis)
+builder.Services.AddSingleton<ILlmAnalysisService, AzureOpenAiService>();
+builder.Services.AddSingleton<IAnalysisConfigService, AnalysisConfigService>();
+builder.Services.AddSingleton<IAuditService, AuditService>();
+
+// Add HTTP client for Azure OpenAI
+builder.Services.AddHttpClient();
+
+// Add memory caching for configuration
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 

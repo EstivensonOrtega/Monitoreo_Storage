@@ -1,0 +1,45 @@
+### Test de Análisis Inteligente en Español - Health Check
+GET https://localhost:49878/api/analysis/status
+Content-Type: application/json
+
+###
+
+### Test de Análisis Inteligente en Español - Con datos simulados
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "ECommerceApp",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions", "AppRequests"],
+  "startTime": "2024-01-15T00:00:00Z",
+  "endTime": "2024-01-15T23:59:59Z",
+  "analysisMode": "intelligent"
+}
+
+###
+
+### Test con aplicación específica para validar respuestas en español
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "SistemaVentas",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions"],
+  "startTime": "2024-09-07T00:00:00Z",
+  "endTime": "2024-09-07T23:59:59Z",
+  "analysisMode": "intelligent"
+}
+
+###
+
+### Test modo básico (fallback) - también debe estar en español
+POST https://localhost:49878/api/analysis/analyze
+Content-Type: application/json
+
+{
+  "applicationName": "TestApp",
+  "tablesToAnalyze": ["AppEvents", "AppExceptions"],
+  "startTime": "2024-09-07T00:00:00Z",
+  "endTime": "2024-09-07T23:59:59Z",
+  "analysisMode": "basic"
+}

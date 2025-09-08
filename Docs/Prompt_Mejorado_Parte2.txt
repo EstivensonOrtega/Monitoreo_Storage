@@ -1,0 +1,32 @@
+Estoy trabajando en la segunda parte del proyecto de monitoreo de logs con LLM. Necesito que me ayudes a construir el nuevo archivo `Plan_Parte2_Monitoreo.md` a partir del contenido de `Plan_Parte1_Monitoreo.md`. En este nuevo archivo se deben aplicar todas las modificaciones necesarias para reflejar los objetivos y requerimientos de la segunda fase del plan de trabajo.
+
+Ya tengo configurado el modelo LLM en Azure AI Foundry con el deployment `gpt-5-mini`, el cual fue probado exitosamente con el siguiente `curl`:
+
+curl --location 'https://orquestador-foundry.openai.azure.com/openai/deployments/gpt-5-mini/chat/completions?api-version=2025-03-01-preview' \
+--header 'Content-Type: application/json' \
+--header 'api-key: [API_KEY]' \
+--data '{
+    "messages": [
+        {
+            "role": "system",
+            "content": "Eres un asistente útil."
+        },
+        {
+            "role": "user",
+            "content": "¿Cuál es la capital de Colombia?"
+        }
+    ],
+    "temperature": 1,
+    "max_completion_tokens": 128000
+}'
+
+📂 Archivos relevantes:
+1. `Monitoreo_Proactivo.txt`: contiene los requerimientos funcionales para esta segunda parte.
+2. `4. Response Data lista para trabajar con LLM.json`: contiene un ejemplo de la respuesta del endpoint implementado en la primera parte, que ahora será la entrada para el análisis del LLM.
+
+🧠 Cambios clave en esta fase:
+- El servicio debe retornar el resultado del análisis realizado por el LLM, en lugar de los registros sin procesar.
+- El análisis debe identificar errores, clasificarlos como críticos o no críticos, y sugerir acciones de resolución o escalamiento.
+- La lógica de notificación automática será implementada en la tercera parte del proyecto, por lo tanto no debe incluirse aún.
+
+Por favor, copia el contenido de `Plan_Parte1_Monitoreo.md` y realiza las modificaciones necesarias para reflejar estos cambios en `Plan_Parte2_Monitoreo.md`.
