@@ -200,6 +200,204 @@ public class AnalysisController : ControllerBase
     }
 
     /// <summary>
+    /// Realiza análisis inteligente de logs recientes sin especificar fechas exactas.
+    /// Consulta los logs de los últimos N minutos desde el momento actual.
+    /// </summary>
+    /// <param name="applicationName">Nombre de la aplicación a analizar.</param>
+    /// <param name="tablesToAnalyze">Tablas a consultar separadas por coma (ej: LinaLog,LogLinaMobile).</param>
+    /// <param name="minutesBack">Número de minutos hacia atrás desde ahora (por defecto: 30).</param>
+    /// <param name="maxRecords">Máximo número de registros por tabla (por defecto: 10).</param>
+    /// <param name="maxResponseTimeMs">Filtro de tiempo de respuesta en milisegundos (opcional).</param>
+    /// <param name="cancellationToken">Token de cancelación.</param>
+    /// <returns>Análisis inteligente de los logs recientes.</returns>
+    /// <response code="200">Análisis de logs recientes completado exitosamente.</response>
+    /// <response code="400">Parámetros inválidos.</response>
+    /// <response code="500">Error interno del servidor.</response>
+    [HttpGet("recent")]
+    [ProducesResponseType(typeof(AnalysisResponse), 200)]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(500)]
+    public async Task<ActionResult<AnalysisResponse>> AnalyzeRecentLogsAsync(
+        [FromQuery] string applicationName,
+        [FromQuery] string tablesToAnalyze,
+        [FromQuery] int minutesBack = 30,
+        [FromQuery] int maxRecords = 10,
+        [FromQuery] int? maxResponseTimeMs = null,
+        CancellationToken cancellationToken = default)
+    {
+        var stopwatch = Stopwatch.StartNew();
+        var analysisId = Guid.NewGuid().ToString();
+
+        try
+        {
+            // Validación de parámetros
+            if (string.IsNullOrWhiteSpace(applicationName))
+            {
+                return BadRequest("El parámetro 'applicationName' es requerido");
+            }
+
+            if (string.IsNullOrWhiteSpace(tablesToAnalyze))
+            {
+                return BadRequest("El parámetro 'tablesToAnalyze' es requerido");
+            }
+
+            if (minutesBack <= 0)
+            {
+                return BadRequest("El parámetro 'minutesBack' debe ser mayor a 0");
+            }
+
+            if (maxRecords <= 0)
+            {
+                return BadRequest("El parámetro 'maxRecords' debe ser mayor a 0");
+            }
+
+            // Parsear las tablas desde string separado por comas
+            var tablesArray = tablesToAnalyze
+                .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                .Select(t => t.Trim())
+                .Where(t => !string.IsNullOrEmpty(t))
+                .ToArray();
+
+            if (tablesArray.Length == 0)
+            {
+                return BadRequest("Debe especificar al menos una tabla en 'tablesToAnalyze'");
+            }
+
+            // Calcular fechas basadas en minutesBack
+            var endTime = DateTime.UtcNow;
+            var startTime = endTime.AddMinutes(-minutesBack);
+
+            // Crear el request equivalente al método analyze
+            var request = new AnalysisRequest
+            {
+                ApplicationName = applicationName,
+                TablesToAnalyze = tablesArray,
+                StartDateUtc = startTime,
+                EndDateUtc = endTime,
+                MaxRecords = maxRecords,
+                MaxResponseTimeMs = maxResponseTimeMs,
+                AnalysisMode = "intelligent" // Siempre usar análisis inteligente para logs recientes
+            };
+
+            _logger.LogInformation("Iniciando análisis de logs recientes para aplicación: {ApplicationName}, " +
+                                 "Minutos hacia atrás: {MinutesBack}, Tablas: {Tables}, " +
+                                 "Rango calculado: {StartDate} - {EndDate}",
+                applicationName, minutesBack, string.Join(", ", tablesArray),
+                startTime, endTime);
+
+            // Registrar inicio del análisis
+            await _auditService.LogAnalysisStartAsync(analysisId, request);
+
+            // Paso 1: Obtener datos usando el servicio de la Parte 1
+            var logsRequest = new LogsQueryRequest
+            {
+                ApplicationName = request.ApplicationName,
+                TablesToAnalyze = request.TablesToAnalyze,
+                StartDateUtc = request.StartDateUtc,
+                EndDateUtc = request.EndDateUtc,
+                MaxRecords = request.MaxRecords,
+                MaxResponseTimeMs = request.MaxResponseTimeMs
+            };
+
+            var logData = await _tableReadService.QueryTablesAsync(logsRequest);
+
+            // Verificar si se obtuvieron datos
+            var totalRecords = logData.TableResults.Sum(t => t.RecordsReturned);
+            if (totalRecords == 0)
+            {
+                _logger.LogWarning("No se encontraron registros recientes para analizar en aplicación: {ApplicationName}", request.ApplicationName);
+                
+                return Ok(new AnalysisResponse
+                {
+                    ApplicationName = request.ApplicationName,
+                    AnalysisTimestamp = DateTime.UtcNow,
+                    TotalRecordsAnalyzed = 0,
+                    AnalysisResults = new AnalysisResults(),
+                    AuditLog = new AuditLog
+                    {
+                        AnalysisId = analysisId,
+                        ProcessingTimeMs = (int)stopwatch.ElapsedMilliseconds,
+                        LlmTokensUsed = 0,
+                        RulesApplied = new[] { $"recent-analysis-{minutesBack}min", "no-data-found" },
+                        UsedFallback = false
+                    }
+                });
+            }
+
+            _logger.LogInformation("Datos obtenidos: {TotalRecords} registros de {TableCount} tablas para análisis reciente",
+                totalRecords, logData.TableResults.Length);
+
+            // Paso 2: Obtener configuración de análisis
+            var configuration = await _configService.GetConfigurationAsync(request.ApplicationName);
+
+            // Paso 3: Ejecutar análisis
+            AnalysisResults analysisResults;
+            var llmTokensUsed = 0;
+            var usedFallback = false;
+
+            // Siempre usar análisis inteligente para logs recientes
+            var isLlmAvailable = await _llmAnalysisService.IsServiceAvailableAsync(cancellationToken);
+            
+            if (isLlmAvailable)
+            {
+                _logger.LogInformation("Ejecutando análisis LLM para {TotalRecords} registros recientes", totalRecords);
+                analysisResults = await _llmAnalysisService.AnalyzeLogsAsync(logData, configuration, cancellationToken);
+                llmTokensUsed = EstimateTokensUsed(logData);
+            }
+            else
+            {
+                _logger.LogWarning("LLM no disponible, ejecutando análisis de fallback para logs recientes");
+                analysisResults = await _llmAnalysisService.AnalyzeLogsAsync(logData, configuration, cancellationToken);
+                usedFallback = true;
+            }
+
+            // Paso 4: Crear respuesta
+            var response = new AnalysisResponse
+            {
+                ApplicationName = request.ApplicationName,
+                AnalysisTimestamp = DateTime.UtcNow,
+                TotalRecordsAnalyzed = totalRecords,
+                AnalysisResults = analysisResults,
+                AuditLog = new AuditLog
+                {
+                    AnalysisId = analysisId,
+                    ProcessingTimeMs = (int)stopwatch.ElapsedMilliseconds,
+                    LlmTokensUsed = llmTokensUsed,
+                    RulesApplied = GetAppliedRules(request.AnalysisMode, usedFallback, minutesBack),
+                    UsedFallback = usedFallback
+                }
+            };
+
+            // Paso 5: Auditar resultado
+            await _auditService.LogAnalysisCompletedAsync(analysisId, response.AuditLog);
+
+            stopwatch.Stop();
+
+            _logger.LogInformation("Análisis de logs recientes completado para aplicación: {ApplicationName}, " +
+                                 "Minutos analizados: {MinutesBack}, Tiempo: {ProcessingTimeMs}ms",
+                applicationName, minutesBack, stopwatch.ElapsedMilliseconds);
+
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            stopwatch.Stop();
+
+            _logger.LogError(ex, "Error durante el análisis de logs recientes para aplicación: {ApplicationName}, " +
+                               "MinutesBack: {MinutesBack}", applicationName, minutesBack);
+
+            await _auditService.LogAnalysisErrorAsync(analysisId, ex.Message, ex);
+
+            return StatusCode(500, new
+            {
+                error = "Error interno durante el análisis de logs recientes",
+                analysisId = analysisId,
+                processingTimeMs = stopwatch.ElapsedMilliseconds
+            });
+        }
+    }
+
+    /// <summary>
     /// Verifica el estado del servicio de análisis LLM.
     /// </summary>
     /// <param name="cancellationToken">Token de cancelación.</param>
@@ -410,6 +608,43 @@ public class AnalysisController : ControllerBase
         rules.Add("error-pattern-matching");
         rules.Add("performance-threshold-check");
         rules.Add("recurrence-detection");
+
+        return rules.ToArray();
+    }
+
+    /// <summary>
+    /// Obtiene la lista de reglas aplicadas durante el análisis de logs recientes.
+    /// </summary>
+    private string[] GetAppliedRules(string? analysisMode, bool usedFallback, int minutesBack)
+    {
+        var rules = new List<string>();
+
+        // Agregar información específica del análisis reciente
+        rules.Add($"recent-analysis-{minutesBack}min");
+
+        if (analysisMode?.ToLowerInvariant() == "intelligent")
+        {
+            if (usedFallback)
+            {
+                rules.Add("fallback-analysis");
+                rules.Add("rule-based-classification");
+            }
+            else
+            {
+                rules.Add("llm-analysis");
+                rules.Add("intelligent-classification");
+            }
+        }
+        else
+        {
+            rules.Add("basic-analysis");
+            rules.Add("rule-based-classification");
+        }
+
+        rules.Add("error-pattern-matching");
+        rules.Add("performance-threshold-check");
+        rules.Add("recurrence-detection");
+        rules.Add("time-window-filtering");
 
         return rules.ToArray();
     }

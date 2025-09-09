@@ -1,0 +1,38 @@
+### Test del nuevo endpoint GET /api/Analysis/recent
+
+### 1. Health Check del servicio
+GET https://localhost:49878/api/analysis/status
+Content-Type: application/json
+
+### 2. Análisis de logs recientes - Configuración básica (últimos 30 minutos)
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog,LogLinaMobile
+
+### 3. Análisis de logs recientes - Últimos 60 minutos con más registros
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog,LogLinaMobile,LoggerMiddleware&minutesBack=60&maxRecords=20
+
+### 4. Análisis de logs recientes - Última hora con filtro de tiempo de respuesta
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog&minutesBack=60&maxRecords=15&maxResponseTimeMs=5000
+
+### 5. Análisis de logs recientes - Últimos 15 minutos (para pruebas rápidas)
+GET https://localhost:49878/api/analysis/recent?applicationName=TestApp&tablesToAnalyze=AppEvents,AppExceptions&minutesBack=15&maxRecords=10
+
+### 6. Análisis de logs recientes - Últimas 4 horas (240 minutos)
+GET https://localhost:49878/api/analysis/recent?applicationName=ECommerceApp&tablesToAnalyze=AppEvents,AppExceptions,AppRequests&minutesBack=240&maxRecords=50
+
+### 7. Test de validación - Falta applicationName (debe devolver 400)
+GET https://localhost:49878/api/analysis/recent?tablesToAnalyze=LinaLog
+
+### 8. Test de validación - Falta tablesToAnalyze (debe devolver 400)
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot
+
+### 9. Test de validación - minutesBack inválido (debe devolver 400)
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog&minutesBack=0
+
+### 10. Test de validación - maxRecords inválido (debe devolver 400)
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog&maxRecords=0
+
+### 11. Análisis de logs recientes - Un solo minuto atrás (muy reciente)
+GET https://localhost:49878/api/analysis/recent?applicationName=LinaChatbot&tablesToAnalyze=LinaLog&minutesBack=1&maxRecords=5
+
+### 12. Análisis de logs recientes - Último día completo (1440 minutos)
+GET https://localhost:49878/api/analysis/recent?applicationName=SistemaVentas&tablesToAnalyze=VentasLog,ErrorLog&minutesBack=1440&maxRecords=100
