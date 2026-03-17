@@ -1,0 +1,19 @@
+### Buscar repositorios públicos de GitHub con Reactor.Maui y Syncfusion.Maui.Toolkit (por defecto)
+POST https://localhost:7000/api/github/search-nuget-packages
+Content-Type: application/json
+
+{
+  "packages": ["Reactor.Maui", "Syncfusion.Maui.Toolkit"],
+  "maxResults": 30
+}
+
+###
+
+### Buscar con paquetes personalizados
+POST https://localhost:7000/api/github/search-nuget-packages
+Content-Type: application/json
+
+{
+  "packages": ["Reactor.Maui", "Syncfusion.Maui.Toolkit"],
+  "maxResults": 10
+}
