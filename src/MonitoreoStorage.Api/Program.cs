@@ -22,6 +22,9 @@ builder.Services.AddSingleton<ILlmAnalysisService, AzureOpenAiService>();
 builder.Services.AddSingleton<IAnalysisConfigService, AnalysisConfigService>();
 builder.Services.AddSingleton<IAuditService, AuditService>();
 
+// Register GitHub search service
+builder.Services.AddSingleton<IGitHubSearchService, GitHubSearchService>();
+
 // Add HTTP client for Azure OpenAI
 builder.Services.AddHttpClient();
 
